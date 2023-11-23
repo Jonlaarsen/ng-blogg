@@ -1,0 +1,21 @@
+<section class="container justify-content-center align-items-center">
+  <h1>Create A New Post</h1>
+  <div class="card w-75 h-75 form-container">
+    <h2>Create post</h2>
+    <label>Title</label>
+    <input #title />
+
+    <br />
+    <label>Content</label>
+    <textarea class="h-25" #body cols="30" rows="10"></textarea>
+    <span></span>
+    <br />
+    <button
+      class="button"
+      (click)="addPost(title.value, body.value)"
+      routerLink=""
+    >
+      Post
+    </button>
+  </div>
+</section>

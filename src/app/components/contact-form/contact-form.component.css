@@ -1,13 +1,5 @@
-@import '~bootstrap/dist/css/bootstrap.css';
-
-:root{
-  --secondary-color: rgb(167, 167, 167) ;
-  --primary-color: rgb(255, 16, 16);
-  --body-text-color: rgba(190, 48, 77, 0.672);
-
-}
 .button{
-
+  width: 10rem;
   margin-right: 20px;
   margin-top: 1.5rem;
   font-weight: 700;

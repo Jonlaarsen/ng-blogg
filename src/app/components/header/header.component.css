@@ -1,0 +1,32 @@
+.navbar{
+  max-height: 4rem;
+  background: linear-gradient(to bottom, rgb(191, 191, 191), rgb(255, 255, 255));
+}
+a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.about{
+  margin-right: 20px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  padding: 5px  50px;
+}
+.logo{
+  margin-left: 20px;
+  height: 3rem;
+}
+.button{
+  margin-top: 2rem;
+  width: 15rem;
+  margin-right: 20px;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  border: none;
+  padding: 5px  50px;
+  color: var(--primary-color);
+}

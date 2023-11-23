@@ -1,0 +1,9 @@
+<app-header></app-header>
+<div class="container">
+  <h1>ALL POST</h1>
+  <div class="container row justify-content-between gap-5">
+    <div *ngFor="let post of posts">
+      <app-post-array class="post-cards" [post]="post"></app-post-array>
+    </div>
+  </div>
+</div>

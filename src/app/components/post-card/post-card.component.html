@@ -1,0 +1,50 @@
+<div class="container1">
+  <div class="container">
+    <div class="card">
+      <img src="{{ post.thumbnailUrl }}" class="card-img-top" alt="ye" />
+      <h1>{{ post.title }}</h1>
+      <div class="body">
+        <p class="fw-bold">{{ post.body }}</p>
+      </div>
+      <small class="text-muted">{{ post.creationDate }}</small>
+    </div>
+  </div>
+  <div>
+    <div class="card comments-section">
+      <h2>Write a comment</h2>
+      <input
+        class="input-field"
+        #comment
+        placeholder="What do you want to comment?"
+      />
+      <button
+        class="button"
+        (click)="sendComment(comment.value)"
+        (click)="comment.value = ''"
+      >
+        Send
+      </button>
+      <h3>Comments</h3>
+      <ul *ngIf="comment">
+        <li *ngFor="let comment of post.comments; let i = index">
+          <p class="comment">{{ comment }}</p>
+          <button
+            *ngIf="this.userService.admin"
+            class="button small"
+            (click)="delete(i)"
+          >
+            DELETE
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <button class="button" (click)="likeBtn()">LIKE</button>
+      <small class="text-success fw-bold">{{ post.likes }}</small>
+    </div>
+    <div>
+      <button class="button" (click)="dislikeBtn()">DISLIKE</button>
+      <small class="text-danger fw-bold">{{ post.dislikes }}</small>
+    </div>
+  </div>
+</div>

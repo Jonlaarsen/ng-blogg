@@ -1,0 +1,23 @@
+article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+.about{
+  margin-bottom: 5rem;
+  height: 30rem;
+  width: 60rem;
+  padding: 10px;
+}
+.contact{
+  width: 60rem;
+  margin-bottom: 10rem;
+}
+h1, h2, h3{
+  color: var(--primary-color);
+}
+label{
+  color: var(--secondary-color);
+}
